@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Phim </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <style>
+    table{ border-collapse:collapse; width: 100%;}
+    th, td{text-align: left; padding: 8px;}
+    tr:nth-child(even) { background-color: rgb(175, 168, 168);}
+  </style>
+  <body>
+    <h1>USER 4   Võ Thanh Trường </h1>
+    <a href="form_add"><button>Them Phim</button></a>
+    <table border="5">
+      <tr>
+        <th>ID</th>
+        <th>LatLong</th>
+        <th>Role</th>
+        <th>OpenHour</th>
+        <th>DefaultAccount</th>
+        <th>BankName</th>
+        <th>BranchName</th>
+        
+      </tr>
+        <% lops.forEach(item => { %>
+          <tr><td><%= item.id %> </td>
+            <td><%= item.NAME %> </td>
+            <td><%= item.Role %> </td>
+            <td><%= item.OpenHour %> </td>
+            <td><%= item.DefaultAccount %> </td>
+            <td><%= item.BankName %> </td>
+            <td><%= item.BranchName %> </td>
+            <td> <a href="/form_update/<%= item.id %>"> Update</a>||<a href="/form_delete/<%= item.id %>"> delete</a></td>
+          </tr>
+        
+        <% }) %>
+        
+      </tr>
+    </table>
+  </body>
+</html> -->
